@@ -61,7 +61,7 @@ function draw() {
     rect(50,minute()*(280/60)+40,280,280/60);
     stroke(200);
     fill(((Math.round((hour()+6)/12))%2)*140+60)
-  	rect(350,20+(hour()%12)*(320/12),20,(320/12))
+  	rect(350,20+((hour()-1)%12)*(320/12),20,(320/12))
     noStroke();
     fill((minute() % 2)*120+60);
   }
